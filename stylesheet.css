@@ -200,6 +200,20 @@ main .starter {
     text-align: center;
     aspect-ratio: 1 / 1;
     padding: 1rem;
+    background-color: #D6BAA7;
+    border-color:  #D6BAA7;
+    opacity: 0;
+    translate: -50%;
+    transition: 600ms ease;
+}
+
+.value.show {
+    opacity: 1;
+    translate: 0;
+}
+
+.services {
+    padding: 0.15rem 4rem;
 }
 
 
@@ -273,8 +287,9 @@ footer {
 
 
     .menu a:hover {
-        background-color: transparent;
-        color: var(--gray);
+        background-color: #d2a88c;
+        color: var(--black);
+        border-radius: 0.75rem;
     }
 
     .hamb {
@@ -304,12 +319,31 @@ footer {
     }
 
     .trust-sec::after {
-        left: -400px;
-        right: -400px;
+        left: -200px;
+        right: -600px;
+        transform: rotate(-45deg);
+    }
+
+    .trust-sec {
+        transform: rotate(45deg);
     }
 
     .value {
-        transform: rotate(45deg);
+        background-color: #D6BAA7;
+        border-color:  #D6BAA7;;
+    }
+
+    .value span {
+        transform: rotate(-45deg);
+        text-align: center;
+    }
+
+    .services {
+        padding: 6rem 20rem;
+    }
+
+    .swiper{
+        display: none;
     }
 
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="stylesheet.css">
     <link rel="icon" href="favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <title>High Quality Tiling</title>
 </head>
 <body>
@@ -38,14 +39,33 @@
     <main class="main">
         <p class="starter">Quality workmanship for kitchens, bathrooms, and outdoor spaces</p>
 
-        <div class="trust-sec">
-                <p class="value">10+ Years Experience </p>
-                <p class="value">Affordable Pricing </p>
-                <p class="value">High-Quality Material</p>
-                <p class="value">Reliable & On-Time</p>
-        </div>
+        <section class="trust-sec">
+                <p class="value"><span>10+ Years Experience </span></p>
+                <p class="value"><span>Affordable Pricing </span></p>
+                <p class="value"><span>High-Quality Material</span></p>
+                <p class="value"><span>Reliable & On-Time</span></p>
+        </section>
+
+        <section class="services">
+            <h2>Services</h2>
+            <!-- Slider main container -->
+            <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                ...
+            </div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+        </section>
     </main>
 
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
